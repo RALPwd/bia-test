@@ -55,3 +55,32 @@
     color: $text-color-light;
   }
 }
+
+@media (width <= 800px){
+  .countryinformation{
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 0 20px;
+  }
+  .flagcontainer{
+    width: 100%;
+  }
+  .infocountry{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 50px;
+    h1{
+      margin-bottom: 20px;
+    }
+    &__title{
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    &__borders{
+      grid-area: 4 / 1 / 5 / 2;
+    }
+  }
+
+  .borderlist{
+    margin-bottom: 50px;
+  }
+}
