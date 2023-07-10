@@ -1,23 +1,29 @@
 'use client'
 
 import React, { createContext, useState, useEffect, useContext } from 'react'
+import Cookies from 'js-cookie'
 
 const ThemeContext = createContext()
 
 const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('Light')
-
-  useEffect(() => {
-    const localTheme = window.localStorage.getItem('theme')
-    localTheme && setTheme(localTheme)
-  }, [])
+  const [theme, setTheme] = useState(() => {
+    const cachedTheme = Cookies.get('theme')
+    return cachedTheme ? cachedTheme : 'light'
+  })
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light'
     setTheme(newTheme)
-    window.localStorage.setItem('theme', newTheme)
+    Cookies.set('theme', newTheme)
   }
 
+  useEffect(() => {
+    const cachedTheme = Cookies.get('theme')
+    if (cachedTheme && cachedTheme !== theme) {
+      setTheme(cachedTheme)
+    }
+  }, [theme])
+  
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
