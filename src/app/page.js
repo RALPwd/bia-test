@@ -1,15 +1,17 @@
+'use client'
+
 import React from 'react'
-import styles from './page.module.css'
-import Header from './components/header'
-import ActionBar from './components/actionBar'
-import RenderCountries from './components/renderCountries'
-import Country from './components/Country'
+import './page.scss'
+import Header from './components/Header/Header'
+import RenderCountries from './components/RenderCountries'
+import { useTheme } from './context/ThemeContext'
 
 export default function Home() {
+  const { theme } = useTheme()
+
   return (
-    <main className={styles.main}>
+    <main className={`main main-${theme}`}>
       <Header></Header>
-      <ActionBar></ActionBar>
       <RenderCountries></RenderCountries>
     </main>
   )

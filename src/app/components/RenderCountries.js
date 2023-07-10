@@ -1,6 +1,6 @@
 import React from 'react'
 import { CountriesProvider } from '../context/CountriesContext'
-import Countries from './Countries'
+import Countries from './Countries/Countries'
 
 const renderCountries = () => {
 

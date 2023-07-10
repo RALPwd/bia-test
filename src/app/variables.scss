@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+//variables
+$white: #fff;
+$black: #000;
+$box-shadow: 0px 5px 9px -6px rgba(0,0,0,0.25);
+
+//light
+$background-secondary-color-light: $white;
+$dark-gray-light: #848484;
+$very-light-gray-light: #fafafa; 
+$background-primary-color-light: $very-light-gray-light;
+$text-color-light: #0d1a2b;
+$placeholder-color-light: $dark-gray-light;
+
+//dark
+$very-dark-blue-dark: #1e2a41;
+$dark-blue-dark: #1c2b3a;
+$background-primary-color-dark: $dark-blue-dark;
+$background-secondary-color-dark: $very-dark-blue-dark;
+$text-color-dark: $white;
+
+$font-family: 'Nunito', sans-serif;
+
+
+

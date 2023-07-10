@@ -1,0 +1,57 @@
+@import '../../variables.scss';
+
+.countryinformation {
+  padding: 0 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+  margin-top: 80px;
+}
+
+.infocountry{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 70px 230px 70px;
+  align-content: center;
+  h1{
+    margin-bottom: 40px;
+  }
+  &__title{
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  &__borders{
+    grid-area: 3 / 1 / 4 / 3;
+  }
+}
+
+.boldtitle{
+  font-weight: bold;
+}
+
+.infoitem{
+  margin-bottom: 20px;
+}
+
+.borderlist{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  a{
+    margin-top: 15px;
+    text-decoration: none;
+  }
+}
+
+.borderitem{
+  padding: 8px 25px;
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  &--dark{
+    background-color: $background-secondary-color-dark;
+    color: $text-color-dark;
+  }
+  &--light{
+    background-color: $background-secondary-color-light;
+    color: $text-color-light;
+  }
+}

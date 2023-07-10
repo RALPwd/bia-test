@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.main {
+  font-family: $font-family;
+  min-height: 100vh;
+  &-light{
+    background-color: $background-primary-color-light;
+    color: $text-color-light;
+  }
+  &-dark{
+    background-color: $background-primary-color-dark;
+    color: $text-color-dark;
+  }
+}

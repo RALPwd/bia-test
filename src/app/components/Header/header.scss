@@ -1,0 +1,38 @@
+//import scss variables
+@import '../../variables.scss';
+
+.header{
+  height: 100px;
+  width: 100%;
+  padding: 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: $box-shadow;
+  &-light{
+    background-color: $background-secondary-color-light;
+    color: $text-color-light;
+  }
+  &-dark{
+    background-color: $background-secondary-color-dark;
+    color: $text-color-dark;
+  }
+  h1{
+    font-size: 1.2rem;
+  }
+  &__button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-family: $font-family;
+    display: flex;
+    align-items: center;
+    &-light{
+      color: $text-color-light;
+    }
+    &-dark{
+      color: $text-color-dark;
+    }
+  }
+}

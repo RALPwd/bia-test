@@ -1,0 +1,11 @@
+@import '../../variables.scss';
+
+.countriescontainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  margin-top: 50px;
+}
