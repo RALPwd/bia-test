@@ -9,3 +9,9 @@
   padding: 0 70px;
   margin-top: 50px;
 }
+
+@media (width <= 800px){
+  .countriescontainer{
+    justify-content: center;
+  }
+}
