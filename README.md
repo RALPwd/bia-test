@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Countries API
+
+This project is a web application that displays information about countries using the [REST Countries API](https://restcountries.com/). The application is built using React with Next.js and Sass.
+
+## Architecture
+
+The project follows a component-based architecture, where the application is broken down into smaller, reusable components. The `components` folder contains the following components:
+
+- `ActionBar`: A component that displays the search bar and filter dropdown.
+- `Countries`: A component that displays a list of countries.
+- `Country`: A component that displays detailed information about a specific country.
+- `CountryCard`: A component that displays a summary of a country's information.
+- `Header`: A component that displays the application header.
+- `RenderCountries`: A component that renders the `CountryCard` component for each country.
+
+The `context` folder contains the React context providers for managing the application state. The `hooks` folder contains custom hooks for fetching and filtering data.
+
+The `countries` folder contains dynamic pages for each country, which are generated at build time using Next.js's static site generation feature.
 
 ## Getting Started
 
-First, run the development server:
+To run the project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone the repository: `git clone https://github.com/your-username/countries-api.git`
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application should now be running at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can view a live demo of the project at [https://bia-test-chi.vercel.app/](https://bia-test-chi.vercel.app/).
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+This project is for demonstration purposes only and is not open for contributions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is free and open-source.
