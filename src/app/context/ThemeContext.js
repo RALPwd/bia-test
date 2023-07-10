@@ -5,7 +5,7 @@ import React, { createContext, useState, useEffect, useContext } from 'react'
 const ThemeContext = createContext()
 
 const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('Dark')
+  const [theme, setTheme] = useState('Light')
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem('theme')
