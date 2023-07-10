@@ -5,7 +5,7 @@ import { useTheme } from '../../context/ThemeContext'
 import './header.scss'
 import { BsSun,  BsMoonFill } from 'react-icons/bs'
 
-const header = () => {
+const Header = () => {
   const { theme, toggleTheme } = useTheme()
 
   return (
@@ -19,4 +19,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
