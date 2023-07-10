@@ -27,6 +27,14 @@ To run the project locally, follow these steps:
 
 The application should now be running at [http://localhost:3000](http://localhost:3000).
 
+## Testing
+
+The project includes unit tests for the custom hooks and components using Jest. To run the tests, follow these steps:
+
+1. Install dependencies: `npm install`
+2. Run the tests: `npm run test`
+
+
 ## Live Demo
 
 You can view a live demo of the project at [https://bia-test-chi.vercel.app/](https://bia-test-chi.vercel.app/).
