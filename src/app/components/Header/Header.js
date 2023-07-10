@@ -13,7 +13,7 @@ const Header = () => {
       <h1>Where in the world?</h1>
 
       <button onClick={toggleTheme} className={`header__button header__button-${theme}`}>{
-        theme === 'light' ? <><BsSun/> &nbsp; Dark Mode</> : <><BsMoonFill/> &nbsp; Light Mode</>
+        theme === 'dark' ? <><BsSun/> &nbsp; Light Mode</> : <><BsMoonFill/> &nbsp; Dark Mode</>
       }</button>
     </header>
   )
