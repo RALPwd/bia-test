@@ -37,7 +37,7 @@ The project includes unit tests for the custom hooks and components using Jest. 
 
 ## Live Demo
 
-You can view a live demo of the project at [https://bia-test-chi.vercel.app/](https://bia-test-chi.vercel.app/).
+You can view a live demo of the project at [https://bia-test-ralpwd.vercel.app/](https://bia-test-ralpwd.vercel.app/).
 
 ## Contributing
 
