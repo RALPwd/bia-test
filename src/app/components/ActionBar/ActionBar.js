@@ -5,7 +5,7 @@ import './actionBar.scss'
 import { useTheme } from '@/app/context/ThemeContext'
 import { BiSearchAlt2, BiArrowBack } from 'react-icons/bi'
 
-const actionBar = ({ query, setQuery, regionFilter, setRegionFilter, mode }) => {
+const ActionBar = ({ query, setQuery, regionFilter, setRegionFilter, mode }) => {
   const { theme } = useTheme()
 
   return (
@@ -53,4 +53,4 @@ const actionBar = ({ query, setQuery, regionFilter, setRegionFilter, mode }) => 
   )
 }
 
-export default actionBar
+export default ActionBar
